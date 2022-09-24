@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/productos.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
     <script src="https://kit.fontawesome.com/8eeb7c51e9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -32,20 +33,28 @@
             </ul>
         </nav>
     </header>
-    <section class="login">
-        <div class="login-page">
-            <div class="form">
-              <form action="index.html" class="form-box animated fadeInUp">
-                  <h1 class="form-title">Sign In</h1>
-                  <input type="text" placeholder="Username" autofocus>
-                  <input type="password" placeholder="Password">
-                  <button type="submit">
-                      Login
-                  </button>
-                  <a class="clickhere" href="/register.html"> ¿No tenes una cuenta? Hacé click aquí!</a>
-              </form>
-            </div>
-          </div>
+    <section>
+        <div class="register">
+        <form action="/login.html" class="form-box">
+        <h2 class="form-title">Creá tu cuenta</h2>
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" placeholder="Username" name="usrnm">
+        </div>
+      
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="text" placeholder="Email" name="email">
+        </div>
+      
+        <div class="input-container">
+          <i class="fa fa-key icon"></i>
+          <input class="input-field" type="password" placeholder="Password" name="psw">
+        </div>
+      
+        <button type="submit" class="btn">Registrate!</button>
+      </form>
+    </div>
     </section>
 
 </body>

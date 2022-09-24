@@ -1,0 +1,66 @@
+
+.register {
+  height:800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/fotos/9.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  
+  .form-box {
+    width: 500px;
+    padding: 40px;
+    background: #cab1d1c0;
+    text-align: center;
+    border-radius: 5%;
+  }
+  .form-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20x;
+  }
+  .input-container {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction:column;
+    padding: 3px;
+    color: white;
+    min-width: 50px;
+    font-size: 18px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid rgb(218, 178, 255);
+  }
+  
+  .btn {
+    background-color: rgb(218, 178, 255);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
