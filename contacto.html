@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/productos.css">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <script src="https://kit.fontawesome.com/8eeb7c51e9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -28,36 +28,54 @@
                 <li><a class="nav-text"href="/index.html"> Home</a></li>
                 <li><a class="nav-text"> Quienes somos </a></li>
                 <li><a class="nav-text"href="productos.html"> Shop!</a></li>
-                <li><a class="nav-text"href="contacto.html"></a></li>
+                <li><a class="nav-text"href> Contactanos</a></li>
                 <li><a class="nav-item" href="/login.html"><i class="fa-solid fa-user"></i> </a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <div class="register">
-        <form action="/login.html" class="form-box">
-        <h2 class="form-title">Creá tu cuenta</h2>
-        <div class="input-container">
-          <i class="fa fa-user icon"></i>
-          <input class="input-field" type="text" placeholder="Username" name="usrnm">
-        </div>
-      
-        <div class="input-container">
-          <i class="fa fa-envelope icon"></i>
-          <input class="input-field" type="text" placeholder="Email" name="email">
-        </div>
-      
-        <div class="input-container">
-          <i class="fa fa-key icon"></i>
-          <input class="input-field" type="password" placeholder="Password" name="psw">
-        </div>
-      
-        <button type="submit" class="btn">Registrate!</button>
-      </form>
-    </div>
-    </section>
+<section>
+  <div class="contact_form">
 
-    <footer>
+    <div class="formulario">      
+      <h1>Contactanos</h1>
+        <h3>Si tenes alguna duda o consulta por favor dejanos tu contacto y un mensaje con tu inquietud y te responderemos a la brevedad.</h3>
+        <h3>Podes contactarnos por Whatsapp al +54 9 11 3434-3434 o por email a info@beaux.com.ar</h3>
+        <h2>¡Gracias!</h2>
+
+          <form action="submeter-formulario.php" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+</section>
+  <footer>
       <div class="footer-content">
           <h3>Beaux Skincare Arg</h3>
           <p>Productos inscriptos en ANMAT. Libres de colorantes y derivados del petroleo. Envíos gratis a todo el país en compras mayores a $4500</p>
@@ -73,11 +91,11 @@
                   <ul class="f-menu">
                      <li><a href="/index.html">Home</a></li>
                      <li><a href="">About</a></li>
-                     <li><a href="contacto.html">>Contact</a></li>
+                     <li><a href="">Contact</a></li>
                   </ul>
                  </div>
            </div>
       </div>
   </footer>
-</body>
-</html>
+  </body>
+  </html>
