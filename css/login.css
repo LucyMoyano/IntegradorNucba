@@ -24,7 +24,7 @@ background-repeat: no-repeat;
   text-transform: uppercase;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
-  font-size: 20x;
+  font-size: 18px;
 }
 .form-box input[type="text"], .form-box input[type="password"], .form-box button[type="submit"] {
   border: 0;
